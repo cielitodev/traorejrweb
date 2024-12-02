@@ -1,0 +1,573 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: black;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid chocolate;
+    width: 80%; /* Could be more or less, depending on screen size */
+    color: whitesmoke;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: red;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+@media screen and (min-width: 378px){
+    header, nav, main, footer{
+        display: grid;
+        place-content: center;
+        grid-template-columns: 100%;
+        text-align: center;
+    }
+    
+    header, footer{
+        position: sticky;
+        background-color: #1E293B;
+        color: whitesmoke;
+    }
+
+    #logo{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: bisque;
+    }
+
+    a{
+        margin: 10px;
+        font-family: cursive;
+        color: black;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    body{
+        background-color: black;
+        color: white;
+    }
+
+    #me{
+        width: 100px;
+        height: 100px;
+    }
+
+    .class{
+        margin: 10px;
+    }
+
+    #img{
+        width: 300px;
+        height: 300px;
+    }
+
+    #he, #rus{
+        color: bisque;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    #but{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        border: 2px solid bisque;
+        width: 150px;
+        height: 30px;
+        background-color: bisque;
+        margin: 25px;
+    }
+
+    footer{
+        color: rgb(255, 255, 255);
+        text-align: center;
+        border: 3px solid bisque;
+    }
+    
+    #set{
+        border: 1px solid bisque;
+        background-color: transparent;
+        width: 100px;
+        height: 40px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: bisque;
+        
+    }
+    
+    input{
+        border: 2px solid black;
+        width: 250px;
+        height: 40px;
+        margin: 5px;
+        text-align: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        justify-content: center;
+    }
+
+    .fa {
+        padding: 20px;
+        font-size: 30px;
+        width: 50px;
+        text-align: center;
+        text-decoration: none;
+      }
+    
+      .fa:hover {
+        opacity: 0.7;
+      }
+    
+      .fa-facebook {
+        background: #3B5998;
+        color: white;
+      }
+    
+      .fa-twitter {
+        background: #55ACEE;
+        color: white;
+      }
+    
+      .fa-youtube{
+        background: rgb(255, 87, 87);
+        color: white;
+      }
+    
+      .fa-instagram{
+        background: rgb(225, 87, 87);
+        color: white;
+      }
+
+      #we{
+        height: 100px;
+        width: 100px;
+        margin: 15px;
+      }
+
+      #we:hover{
+        border-radius: 100px;
+        border: 3px solid bisque;
+        cursor: pointer;
+        transform: rotate(360deg);
+        transition: calc(4.4s);
+      }
+
+      #port{
+        width: 300px;
+        height: 300px;
+        margin: 10px;
+      }
+
+      #submit{
+        width: 100px;
+        height: 30px;
+        border: 2px solid black;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-align: center;
+      }
+    
+
+
+}
+
+@media screen and (min-width: 1200px){
+    main{
+        display: grid;
+        place-content: center;
+        grid-template-columns: 100%;
+        text-align: center;
+        background-color: black;
+        color: white;
+    }
+    
+    header, footer{
+        position: sticky;
+        background-color: whitesmoke;
+        color: black;
+    }
+    
+    #logo{
+        font-family: cursive;
+        color: chocolate;
+        margin-right: 50px;
+        margin-top: 5px;
+    }
+    
+    a{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-decoration: none;
+        margin: 15px;
+        color: black;
+        text-transform: uppercase;
+    }
+    
+    #he{
+        color: chocolate;
+        font-family: cursive;
+    
+    }
+    
+    h4, h2{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-style: italic;
+    }
+    
+    #rus{
+        color: chocolate;
+        font-family: cursive;
+    }
+    
+    nav{
+        display: flex;
+        justify-content: center;
+    }
+    
+    #me{
+        width: 50px;
+        height: 50px;
+    }
+    
+    .new{
+        display: flex;
+        justify-content: center;
+        margin: 15px;
+    }
+    
+    .class{
+        border: 2px solid chocolate;
+        width: 200px;
+        margin: 5px;
+        border-style: dotted;
+    }
+    
+    #diff{
+        border: 2px solid chocolate;
+        background-color: chocolate;
+        width: 100px;
+        text-align: center;
+    }
+    
+    #but{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        border: 2px solid chocolate;
+        width: 150px;
+        height: 30px;
+        background-color: chocolate;
+        margin: 25px;
+    }
+    
+    footer{
+        background-color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+        text-align: center;
+        border: 3px solid chocolate;
+    }
+    
+    #set{
+        border: 1px solid chocolate;
+        width: 100px;
+        background-color: transparent;
+        height: 40px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: chocolate;
+        
+    }
+    
+    input{
+        border: 2px solid black;
+        width: 250px;
+        height: 40px;
+        margin: 5px;
+        text-align: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        justify-content: center;
+    }
+    
+    form{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    
+    #img{
+        width: 400px;
+        height: 400px;
+    }
+    
+    #port{
+        width: 300px;
+        height: 300px;
+        margin: 15px;
+    }
+    
+    .serv{
+        display: flex;
+        justify-content: center;
+    }
+    
+    #we{
+        width: 200px;
+        height: 200px;
+        margin: 5px;
+    }
+    
+    .doe{
+        border: 2px solid chocolate;
+        margin: 15px;
+    }
+    
+    .fa {
+        padding: 20px;
+        font-size: 30px;
+        width: 50px;
+        text-align: center;
+        text-decoration: none;
+      }
+    
+      .fa:hover {
+        opacity: 0.7;
+      }
+    
+      .fa-facebook {
+        background: #3B5998;
+        color: white;
+      }
+    
+      .fa-twitter {
+        background: #55ACEE;
+        color: white;
+      }
+    
+      .fa-youtube{
+        background: rgb(255, 87, 87);
+        color: white;
+      }
+    
+      .fa-instagram{
+        background: rgb(225, 87, 87);
+        color: white;
+      }
+    
+      #img:hover{
+        border-radius: 100px;
+        border: 2px solid chocolate;
+        color: chocolate;
+        cursor: pointer;
+        width: 300px;
+        height: 300px;
+        margin: 25px;
+        transform: rotate(360deg);
+        box-shadow: 2px 2px 24px #fff;
+        transition: calc(4.4s);
+      }
+    
+      #a:hover{
+        color: yellow;
+        font-family: cursive;
+        text-decoration: wavy;
+        background-color: chocolate;
+        border: 3px solid chocolate;
+        transform: rotate3d(360deg);
+        transition: calc(0.4s);
+      }
+
+      #submit{
+        width: 100px;
+        height: 30px;
+        border: 2px solid black;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-align: center;
+      }
+
+
+      /* Google Fonts Link */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Resetting default styling and setting font-family */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    color: black;
+}
+
+#bk {
+  width: 100%;
+  min-height: 100vh;
+  padding: 0 10px;
+  display: flex;
+  background: transparent;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Login form styling */
+.login_form {
+    width: 100%;
+    max-width: 435px;
+    background: #fff;
+    border-radius: 6px;
+    padding: 41px 30px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.login_form h3 {
+    font-size: 20px;
+    text-align: center;
+    color: black;
+}
+
+/* Google & Apple button styling */
+
+.login_form .login_option {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.login_form .login_option .option {
+    width: calc(100% / 2 - 12px);
+}
+
+.login_form .login_option .option a {
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    background: #F8F8FB;
+    border: 1px solid #DADAF2;
+    border-radius: 5px;
+    margin: 34px 0 24px 0;
+    text-decoration: none;
+    color: #171645;
+    font-weight: 500;
+    transition: 0.2s ease;
+}
+
+.login_form .login_option .option a:hover {
+    background: #ededf5;
+    border-color: #626cd6;
+}
+
+.login_form .login_option .option a img {
+    max-width: 25px;
+}
+
+.login_form p {
+    text-align: center;
+    font-weight: 500;
+    color: black;
+}
+
+.login_form .separator {
+    position: relative;
+    margin-bottom: 24px;
+}
+
+/* Login option separator styling */
+.login_form .separator span {
+    background: #fff;
+    z-index: 1;
+    padding: 0 10px;
+    position: relative;
+}
+
+.login_form .separator::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    height: 1px;
+    background: #C2C2C2;
+    display: block;
+}
+
+form .input_box label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+/* Input field styling */
+form .input_box input {
+    width: 100%;
+    height: 57px;
+    border: 1px solid #DADAF2;
+    border-radius: 5px;
+    outline: none;
+    background: #F8F8FB;
+    font-size: 17px;
+    padding: 0px 20px;
+    margin-bottom: 25px;
+    transition: 0.2s ease;
+}
+
+form .input_box input:focus {
+    border-color: #626cd6;
+}
+
+form .input_box .password_title {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+form .input_box {
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    color: #626cd6;
+    font-weight: 500;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Login button styling */
+form button {
+    width: 100%;
+    height: 56px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background: #626CD6;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-bottom: 28px;
+    transition: 0.3s ease;
+}
+
+form button:hover {
+    background: #4954d0;
+}
+}

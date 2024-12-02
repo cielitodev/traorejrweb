@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>emmetportfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1 id="logo">EMMET</h1>
+            <a href="index.html" id="a">home</a>
+            <a href="about.html" id="a">about</a>
+            <a href="services.html" id="a">services</a>
+            <a href="contact.html" id="diff">contact</a>
+        </nav>
+    </header>
+    <main>
+        <div class="contianner">
+            <div class="box">
+                <h1 id="he">HI I'AM</h1>
+                <h4 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">EMMET TRAORE JR</h4>
+                <img src="portpic2.jpg" id="img">
+                <!-- Trigger/Open The Modal -->
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>EMMET TRAORE JR have BSc, Ms, and PhD in networking and programing<br>
+    while also having Ms, in software egineering, Phd in WEB</p>
+  </div>
+
+</div>
+                <h1 id="rus">A FRONT-END WEB DEVELOPER</h1>
+                <h2>MY SKILLS</h2>
+                <div class="new">
+                    <div class="class">
+                        <img src="html.jpg" alt="" id="me">
+                        <h4>HTML 5</h4>
+                        <p id="ur">I have seven (10) years Experience in<br> using the HTML 5 language for mordernized<br> webpages and well know entity.</p>
+                    </div>
+                    <div class="class">
+                        <img src="css.jpg" alt="" id="me">
+                        <h4>CSS</h4>
+                        <p id="ur">Build and designed animated website<br> and mordern website for various institution<br> for over ten (10) years.</p>
+                    </div>
+                    <div class="class">
+                        <img src="dev.jpg" id="me">
+                        <h4>DEV/C++</h4>
+                        <p id="ur">Specialized dev/c++ programmer. I Have three<br>years experience in pragramming <br> with dev/c++ </p>
+                    </div>
+                    <div class="class">
+                        <img src="js.jpg" id="me">
+                        <h4>JAVASCRIPT</h4>
+                        <p id="ur">I have a ten (10) years experience in using<br>javascript for database projects, apps building<br> and Structuring political website</p>
+                    </div>
+                    <div class="class">
+                        <img src="php.jpg" id="me">
+                        <h4>PHYTON</h4>
+                        <p id="ur">AM A Specialized and well trained phyton programmer<br>
+                        with BSc, Master, and PhD. I Have build over twenty APi<sub>s</sub><br> robots and AI<sub>s</sub> using phyton.</p>
+                    </div>
+                </div>
+                    <input type="button" value="VIEW PROJECTS" id="but">
+                    <a href="book.html"><input type="button" value="BOOK A PROJECT" id="but"></a>
+            </div>
+        </div>
+        
+    </main>
+    <footer>
+        <h2>subscribed</h2>
+        <p>subscribed to my newsletter to recieve periodic update about new projects</p>
+        <form>
+        EMAIL<input type="text" placeholder="EMAIL ADDRESS">
+        <input type="button" value="SUBMIT" id="set">
+        </form>
+        <h3>RECENT PROJECTS</h3>
+        <p><b><i>E-Commerce Website!</i></b> <b><i>Educational Website!</i></b> <b><i>Music Website!</i></b>  <b><i>Political Website!</p>
+            <hr>
+        <p>your pravcy is well protected with us!! ALL RIGHT RESERVED 2024@COPYRIGHT</p>
+    </footer>
+
+    <script>
+        // Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("img");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+    </script>
+</body>
+</html>
